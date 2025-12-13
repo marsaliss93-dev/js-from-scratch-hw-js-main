@@ -13,3 +13,5 @@ while (n <= 10) {
   factorial *= n;
   n++;
 }
+
+console.log(factorial); // 3628800

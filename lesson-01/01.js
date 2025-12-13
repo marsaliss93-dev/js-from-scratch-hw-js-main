@@ -9,3 +9,5 @@ while (x <= 20) {
     sum += x;
     x++;
 }
+
+console.log(sum); // 210

@@ -15,3 +15,5 @@ while (x <= 20) {
   }
   x++;
 }
+
+console.log(sum); // 100
