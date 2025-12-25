@@ -12,10 +12,12 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter(str) {
-    let result = ''
-    for (let i = 0; i < str.length; i++) {
-        result += str[i] + str[i]
+function findCommonElements(array1, array2) {
+    const common = []
+    for (let i = 0; i < array1.length; i++) {
+        if (includesElement(array2, array1[i])) {
+            common.push(array1[i])
+        }
     }
-    return result
+    return common
 }
