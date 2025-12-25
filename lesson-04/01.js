@@ -13,10 +13,11 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function doubleEachCharacter(str) {
-    let result = ''
-    for (let i = 0; i < str.length; i++) {
-        result += str[i] + str[i]
+function includesElement(array, element) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === element) {
+            return true
+        }
     }
-    return result
+    return false
 }
